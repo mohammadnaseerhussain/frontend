@@ -91,20 +91,20 @@ height:70%;
 </table>
 <script>
 function display(value){
-document.getelementbyid("result").innerhtml +=value;
+document.getelementbyid("result").value +=value;
 }
 function calculate(){
-var p=document.getelementbyid("result").innerhtml;
+var p=document.getelementbyid("result").value;
 var q=eval(p);
-document.getelementbyid("result").innerhtml= q;
+document.getelementbyid("result").value= q;
 }
 function clearscreen(){
-document.getelementbyid("result").innerhtml="";
+document.getelementbyid("result").value="";
 }
 <!--function deleter(){
-var a=document.getelementbyid("result").innerhtml;
+var a=document.getelementbyid("result").value;
 a=a.substring(0,a.length-1);
-document.getelementbyid("result").innerhtml=a;
+document.getelementbyid("result").value=a;
 }-->
 </script>
 </body>
